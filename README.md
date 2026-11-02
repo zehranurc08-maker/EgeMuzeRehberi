@@ -1,4 +1,4 @@
-# 🏛️ Ege Müze Rehberi (Ege Museum Guide)
+# 🏛️ Ege Müze Rehberi 
 
 **Ege Müze Rehberi**, Ege Bölgesi'nde yer alan tarihi ve kültürel zenginlikleri, antik kentleri ve müzeleri kullanıcıların keşfetmesini sağlayan **Android (Java)** tabanlı bir mobil uygulamadır.
 
