@@ -1,0 +1,28 @@
+package com.zehranur.egemuzerehberi;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SplashActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splash); // Bu satır yazdığın XML tasarımını bağlar
+
+        // 3 saniye bekle ve sonra Giriş ekranına geç
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // Şimdilik MainActivity'ye gitsin (Giriş ekranını haftaya yapacağız)
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }, 3000); // 3000 milisaniye = 3 saniye
+    }
+
+}
